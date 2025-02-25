@@ -62,36 +62,32 @@ const ChatHeader = ({
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-3">
-          {user ? (
-            <Link to="/settings" className="flex items-center gap-3 hover:bg-gray-800/50 px-3 py-2 rounded-lg">
-              <div className="text-right hidden ">
-                <p className="text-sm font-medium text-gray-200">{user.displayName}</p>
-                <p className="text-xs text-gray-400">{user.email}</p>
-              </div>
-              <Avatar className="h-8 w-8 border  border-gray-700 hover:border-gray-500 transition-colors">
-                <AvatarImage src={user.photoURL} />
-                <AvatarFallback>{user.displayName?.charAt(0) || user.email?.charAt(0)}</AvatarFallback>
-              </Avatar>
-            </Link>
-          ) : (
-            <Link to="/login">
-              <Button
-                variant="outline"
-                size="icon"
-                className="rounded-full"
-              >
-                Sign In
-              </Button>
-            </Link>
-          )}
-          {isOffline && (
-            <div className="flex items-center gap-1 text-sm text-yellow-500">
-              <WifiOff className="w-4 h-4" />
-              <span>Offline Mode</span>
+        <div className="flex items-center gap-3 md:ml-[-10px]">
+        {user ? (
+          <Link to="/settings" className="flex items-center gap-3 hover:bg-gray-800/50 px-3 py-2 rounded-lg">
+            <div className="text-right hidden">
+              <p className="text-sm font-medium text-gray-200">{user.displayName}</p>
+              <p className="text-xs text-gray-400">{user.email}</p>
             </div>
-          )}
-        </div>
+            <Avatar className="h-8 w-8 border border-gray-700 hover:border-gray-500 transition-colors">
+              <AvatarImage src={user.photoURL} />
+              <AvatarFallback>{user.displayName?.charAt(0) || user.email?.charAt(0)}</AvatarFallback>
+            </Avatar>
+          </Link>
+        ) : (
+          <Link to="/login">
+            <Button variant="outline" size="icon" className="rounded-full">
+              Sign In
+            </Button>
+          </Link>
+        )}
+        {isOffline && (
+          <div className="flex items-center gap-1 text-sm text-yellow-500">
+            <WifiOff className="w-4 h-4" />
+            <span>Offline Mode</span>
+          </div>
+        )}
+      </div>
       </div>
     </div>
   );
