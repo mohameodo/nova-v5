@@ -62,7 +62,7 @@ const ChatHeader = ({
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-3 md:ml-[-10px]">
+        <div className="flex items-center gap-3 md:mr-[30px]">
         {user ? (
           <Link to="/settings" className="flex items-center gap-3 hover:bg-gray-800/50 px-3 py-2 rounded-lg">
             <div className="text-right hidden">
