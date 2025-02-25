@@ -1,71 +1,67 @@
-# Welcome to your GPT Engineer project
+# Nova - AI
 
-## Project info
+Welcome to **Nova**, an advanced AI powered by **Nova 2**. Created by **Nexiloop (NLOP) and Mohamedo**, Nova is designed to be an all-in-one AI assistant capable of handling a wide range of tasks, from generating documentation and code to deep searching the web for videos, images, and more.
 
-**URL**: https://run.gptengineer.app/projects/9d4bcff1-da7e-4e73-bb35-7a988b4bdb7f/improve
+## Features
 
-## How can I edit this code?
+### 🤖 AI Capabilities
+- **AI Chat & Conversations**: Engage in intelligent and meaningful conversations with Nova.
+- **Code Generation**: Write and debug code in various programming languages.
+- **Image Generation**: Create AI-generated images on demand.
+- **Documentation Writing**: Generate structured documentation effortlessly.
+- **DeepThink & DeepSearch**: Advanced AI reasoning and deep web searches.
+- **Big Data Handling**: Process and analyze large files efficiently.
+- **Multimedia Support**: Search and handle images, videos, and voice-based interactions.
+- **Movie & Show Streaming**: Watch movies and TV shows for free directly from Nova.
 
-There are several ways of editing your application.
+### 🔍 DeepSearch (Advanced AI Search)
+- **Search the Web**: Find articles, research papers, and general web content.
+- **Image & Video Search**: Locate relevant images and videos online.
+- **AI-Powered Recommendations**: Get the best search results based on AI analysis.
 
-**Use GPT Engineer**
+### 🎥 Entertainment Features
+- **Watch Movies & Shows**: Enjoy free streaming of movies and TV shows.
+- **AI-Powered Content Discovery**: Get recommendations based on your preferences.
 
-Simply visit the GPT Engineer project at [GPT Engineer](https://gptengineer.app/projects/9d4bcff1-da7e-4e73-bb35-7a988b4bdb7f/improve) and start prompting.
+### 🎤 Voice & Video Chat
+- **Talk with Nova**: Engage in AI voice and video conversations.
+- **Multi-Modal Interactions**: Switch between text, voice, and video seamlessly.
 
-Changes made via gptengineer.app will be committed automatically to this repo.
+### 🌍 Connectivity & Versatility
+- **VLOP - AI-Powered Universal Search**: Connect with AI to explore everything in one place.
+- **Real-time AI Insights**: Stay updated with the latest trends and AI-generated insights.
+- **Seamless UI/UX**: Designed for ease of use and smooth interactions.
 
-**Use your preferred IDE**
+## 🌐 Access Nova
+You can use Nova on the following platforms:
+- 🔗 [ai.nexiloop.com](https://ai.nexiloop.com)
+- 🔗 [ai.vlop.fun](https://ai.vlop.fun)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in the GPT Engineer UI.
+## 🚀 Getting Started
+To get started, simply visit one of the links above and begin interacting with Nova. No sign-up required for basic features.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Technologies Used
+- **AI Model**: Nova 2
+- **Backend**: Node.js, Python
+- **Frontend**: React.js, Tailwind CSS
+- **Database**: Other databases
+- **Hosting**: Cloudflare, Vercel
 
-Follow these steps:
+## 🏗️ Future Updates
+- **Enhanced AI Learning**: More personalized and context-aware interactions.
+- **Expanded Multimedia Search**: Better integration with video platforms.
+- **Advanced API Access**: Nova API for developers.
+- **Offline Mode**: Use Nova with limited connectivity.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📧 Contact & Support
+For support, inquiries, or collaborations, reach out via:
+- 📩 Email: [support@nexiloop.com](mailto:support@nexiloop.com)
+- 🌐 Website: [nexiloop.com](https://nexiloop.com)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ⚖️ Licensing & Usage
+If anyone wants to use Nova, please follow the licensing terms and use **pnpm** for package management.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
+**Nova - The Ultimate AI Experience. Powered by NLOP & Mohamedo.**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-All GPT Engineer projects can be deployed directly via the GPT Engineer app.
-
-Simply visit your project at [GPT Engineer](https://gptengineer.app/projects/9d4bcff1-da7e-4e73-bb35-7a988b4bdb7f/improve) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.gptengineer.app/tips-tricks/custom-domain/)
+© 2025 Nexiloop. All rights reserved.
