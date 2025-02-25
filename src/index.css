@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  @apply bg-chatgpt-main text-white;
+}
+
+.sidebar-item {
+  @apply flex items-center gap-3 rounded-md px-3 py-3 text-sm transition-colors duration-200 hover:bg-chatgpt-hover cursor-pointer;
+}
+
+.action-button {
+  @apply flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-chatgpt-hover/50 border border-transparent hover:border-chatgpt-border transition-all duration-200;
+}
+
+.dropdown-menu-item {
+  @apply flex w-full items-center rounded-md px-2 py-2 text-sm hover:bg-gray-800 transition-colors;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

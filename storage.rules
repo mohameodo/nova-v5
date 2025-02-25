@@ -1,0 +1,33 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow public read of images
+    match /users/{userId}/images/{imageId} {
+      allow read: if true;
+      // Only allow write if user is authenticated and it's their folder
+      allow write: if request.auth != null 
+                  && request.auth.uid == userId
+                  // Validate file size (max 5MB)
+                  && request.resource.size < 5 * 1024 * 1024
+                  // Validate image content type
+                  && request.resource.contentType.matches('image/.*')
+                  // Limit daily uploads (10 per day)
+                  && existingData().dailyUploads < 10;
+    }
+    
+    // Helper function to check daily uploads
+    function existingData() {
+      return get(/databases/$(database.instance)/documents/users/$(request.auth.uid)/imageStats/$(time.date())).data
+              || { 'dailyUploads': 0 };
+    }
+
+    match /user-uploads/{userId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null 
+                   && request.auth.uid == userId 
+                   && request.resource.size < 10 * 1024 * 1024
+                   && (request.resource.contentType.matches('image/.*') 
+                       || request.resource.contentType.matches('text/.*'));
+    }
+  }
+}

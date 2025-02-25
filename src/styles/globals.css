@@ -1,0 +1,107 @@
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+@keyframes border-top {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+@keyframes border-right {
+  0%, 100% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+}
+
+@keyframes border-bottom {
+  0%, 100% { transform: translateX(100%); }
+  50% { transform: translateX(-100%); }
+}
+
+@keyframes border-left {
+  0%, 100% { transform: translateY(100%); }
+  50% { transform: translateY(-100%); }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-200%) translateY(-200%) rotate(45deg); }
+  100% { transform: translateX(200%) translateY(200%) rotate(45deg); }
+}
+
+@keyframes border-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes orbit-1 {
+  0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@keyframes orbit-2 {
+  0% { transform: rotate(120deg) translateX(100px) rotate(-120deg); }
+  100% { transform: rotate(480deg) translateX(100px) rotate(-480deg); }
+}
+
+@keyframes orbit-3 {
+  0% { transform: rotate(240deg) translateX(100px) rotate(-240deg); }
+  100% { transform: rotate(600deg) translateX(100px) rotate(-600deg); }
+}
+
+.animate-border-top {
+  animation: border-top 3s infinite;
+}
+
+.animate-border-right {
+  animation: border-right 3s infinite;
+  animation-delay: 0.75s;
+}
+
+.animate-border-bottom {
+  animation: border-bottom 3s infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-border-left {
+  animation: border-left 3s infinite;
+  animation-delay: 2.25s;
+}
+
+.animate-shine {
+  animation: shine 3s infinite;
+}
+
+.animate-border-rotate {
+  animation: border-rotate 4s linear infinite;
+}
+
+.animate-orbit-1 {
+  animation: orbit-1 8s linear infinite;
+}
+
+.animate-orbit-2 {
+  animation: orbit-2 8s linear infinite;
+}
+
+.animate-orbit-3 {
+  animation: orbit-3 8s linear infinite;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

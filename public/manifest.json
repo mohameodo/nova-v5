@@ -1,0 +1,67 @@
+{
+  "id": "com.nexiloop.nova",
+  "name": "Nova AI by Nexiloop",
+  "short_name": "Nova AI",
+  "description": "Next-generation AI chat assistant by Nexiloop",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1d1e20",
+  "theme_color": "#1d1e20",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "ai", "chat"],
+  "icons": [
+    {
+      "src": "/nlop.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/nlop.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New Chat",
+      "short_name": "New Chat",
+      "description": "Start a new conversation",
+      "url": "/?new=1",
+      "icons": [{ "src": "/nlop.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Settings",
+      "short_name": "Settings",
+      "description": "Open settings",
+      "url": "/settings",
+      "icons": [{ "src": "/nlop.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/chat.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "platform": "narrow"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.nexiloop.nova"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/nova-ai/id123456789"
+    }
+  ],
+  "prefer_related_applications": false
+}
